@@ -26,8 +26,8 @@ st.sidebar.image("https://i.imgur.com/b7xIoB9.png", caption="AI-Powered Nutritio
 def load_assets():
     """Loads the pre-trained model and scaler."""
     # Adjusted path for deployment
-    model_path = 'saved_model/lstm_calorie_predictor.h5'
-    scaler_path = 'saved_model/scaler.pkl'
+    model_path = 'lstm_calorie_predictor.h5'
+    scaler_path = 'scaler.pkl'
     
     if not os.path.exists(model_path) or not os.path.exists(scaler_path):
         st.error("Model or scaler not found. Ensure `saved_model` folder with `lstm_calorie_predictor.h5` and `scaler.pkl` is in the repository.")
